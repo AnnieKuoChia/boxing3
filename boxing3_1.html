@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>Margin Collapse</title>
+    <style>
+      p {
+        border: 1px solid #ff6600;
+        background-color: #FFF0B4;
+        padding: 20px 0 20px 10px;
+        margin-bottom: 50px;
+        margin-top: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Margin collapse</h1>
+    <p>段落元素1</p>
+    <p>段落元素2</p>
+    <h3>你可能以為兩個元素之間應該有 25px + 50px = 75px 的距離，但事實上只會有 50px，因為比較小的 margin-top 被相鄰的元素 margin-bottom 吸收了。<br>兩個元素的 margin 不會互相累加，而是會融合在一起。</h3>
+  </body>
+</html>

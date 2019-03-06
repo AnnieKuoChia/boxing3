@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8'/>
+    <title>Margin Collapse</title>
+    <style>
+      p {
+        border: 1px solid #ff6600;
+        background-color: #FFF0B4;
+        padding: 20px 0 20px 10px;
+        margin-bottom: 50px;
+        margin-top: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>防止崩塌—加入隱形元素</h1>
+    <p>段落元素1</p>
+    <div style='padding-top: 1px'></div>  
+    <p>段落元素2</p>
+    <h3>但如果你就是不想要 collapse 發生，我們可以在兩個元素間加上另一個隱形元素，也就是把他們擋住，不讓 margin 融合。<br>注意我們這個 <div> 上直接套用了 padding-top: 1px 的樣式，避免他的高度變成 0 ，只要高度存在，你就可以阻隔兩個 p 元素之間的 margin 互相吸收。</h3>
+  </body>
+</html>
